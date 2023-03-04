@@ -23,6 +23,8 @@ const getLineThree = () => {
     return line3[Math.floor(Math.random() * line3.length)];
 }
 
-console.log(getLineOne());
-console.log(getLineTwo());
-console.log(getLineThree());
+const createPoem = (line1, line2, line3) => {
+    return `${line1}\n${line2}\n${line3}`;
+}
+
+console.log(createPoem(getLineOne(), getLineTwo(), getLineThree()));
